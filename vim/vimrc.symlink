@@ -84,3 +84,12 @@ function! StripWhitespace ()
     exec ':%s/ \+$//gc'
 endfunction
 map ,s :call StripWhitespace ()<CR>
+
+
+" ---------------------------------------------------------------------------
+"  Opening files
+" ---------------------------------------------------------------------------
+
+map <Leader>e :e <C-r>=expand("%:p:h") . "/" <CR>
+map <Leader>te :tabe <C-r>=expand("%:p:h") . "/" <CR>
+
