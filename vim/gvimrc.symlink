@@ -3,8 +3,8 @@ set anti
 set lines=9999 columns=9999
 set guioptions=egmrt
 
-" Command + t to :CommandT
 if has("gui_macvim")
+  " Command + t to :CommandT
   macmenu &File.New\ Tab key=<nop>
   map <D-t> :CommandT<CR>
 endif
