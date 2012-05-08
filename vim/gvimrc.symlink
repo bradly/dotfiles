@@ -13,6 +13,10 @@ if has("gui_macvim")
   map <D-F> :Ack<space>
 endif
 
+
+" Command + e for ConqueTerm
+map <D-e> :call StartTerm()<CR>
+
 " Open Command+T in a new tab
 let g:CommandTAcceptSelectionTabMap='<CR>'
 
