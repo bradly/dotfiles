@@ -7,6 +7,10 @@ if has("gui_macvim")
   " Command + t to :CommandT
   macmenu &File.New\ Tab key=<nop>
   map <D-t> :CommandT<CR>
+
+  " Command + f for Ack
+  macmenu &Edit.Find.Find\.\.\. key=<nop>
+  map <D-F> :Ack<space>
 endif
 
 " Open Command+T in a new tab
