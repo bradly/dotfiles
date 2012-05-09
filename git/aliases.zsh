@@ -13,7 +13,7 @@ alias cherry-pick='git cherry-pick'
 alias commit='git commit'
 alias d='git diff'
 alias fetch='git fetch'
-alias log="git log --graph --pretty=format:'%Cred%h%Creset %an: %s - %Creset %C(yellow)%d%Creset %Cgreen(%cr)%Creset' --abbrev-commit --date=relative"
+alias log="git log -n 20 --graph --pretty=format:'%Cred%h%Creset %an: %s - %Creset %C(yellow)%d%Creset %Cgreen(%cr)%Creset' --abbrev-commit --date=relative"
 alias push='git push'
 alias rebase='git rebase'
 alias reset='git reset'
