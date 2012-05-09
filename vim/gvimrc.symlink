@@ -2,17 +2,25 @@ colorscheme desert
 set anti
 set lines=9999 columns=9999
 set guioptions=egmrt
+set gfn=Menlo\ Regular:h22
+
+" CtrlP ignores
+let g:ctrlp_map = ''
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\.git$\|\.hg$\|\.svn$',
+  \ 'file': '\.pyc$\|\.pyo$\|\.rbc$|\.rbo$\|\.class$\|\.o$\|\~$\',
+  \ }
 
 if has("gui_macvim")
   " Command + t to :CommandT
   macmenu &File.New\ Tab key=<nop>
-  map <D-t> :CommandT<CR>
+  map <D-t> :CtrlP<CR>
+  imap <D-t> <ESC>:CtrlP<CR>
 
   " Command + f for Ack
   macmenu &Edit.Find.Find\.\.\. key=<nop>
   map <D-F> :Ack<space>
 endif
-
 
 " Command + e for ConqueTerm
 map <D-e> :call StartTerm()<CR>
