@@ -1,0 +1,27 @@
+set alias_file          = ~/.mutt/aliases
+set certificate_file    = ~/.mutt/certificates
+set header_cache        = ~/.mutt/cache/headers
+set message_cachedir    = ~/.mutt/cache/bodies
+set message_cache_clean = yes
+
+set folder    = "imaps://something.example.com"
+set spoolfile = "imaps://something.example.com"
+set hostname  = "something.example.com"
+set realname  = "Bradly Feeley"
+set from      = "email@example.com"
+set use_from  = yes
+set use_envelope_from
+
+# mailboxes +INBOX +archive
+
+set editor         = "vim + -c 'set textwidth=72 ft=mail enc=utf-8 syntax=mail' -c 'set wrap' -c 'set nocp' -c 'set spell' -c '?^$'"
+set menu_scroll    = yes
+set sort           = threads
+set strict_threads = yes
+set config_charset = utf-8
+set mail_check     = 60
+
+ignore          *
+unignore        From To Cc Bcc Date Subject
+unhdr_order     *
+hdr_order       From: To: Cc: Bcc: Date: Subject:
