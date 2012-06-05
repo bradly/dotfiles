@@ -18,4 +18,6 @@ alias push='git push'
 alias rebase='git rebase'
 alias reset='git reset'
 alias s='git status'
+alias show='git show'
+alias stash='git stash'
 alias gs='git status -sb' # upgrade your git if -sb breaks for you. it's fun.
