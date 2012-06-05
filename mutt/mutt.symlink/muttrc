@@ -16,10 +16,13 @@ set sort_aux       = "last-date-received"
 set strict_threads = yes
 set config_charset = utf-8
 set mail_check     = 60
+set noconfirmappend
 
 ignore          *
 unignore        From To Cc Bcc Date Subject
 unhdr_order     *
 hdr_order       From: To: Cc: Bcc: Date: Subject:
+
+macro index,pager D "<save-message>=Archive<enter>" "Archive message"
 
 source ~/.mutt/muttrc.local
