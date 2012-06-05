@@ -1,5 +1,5 @@
 vim/vim.symlink/.netrwhist
 git/gitconfig.symlink
-mutt/cache/*
-mutt/certificates
-mutt/muttrc.local
+mutt/mutt.symlink/cache/*
+mutt/mutt.symlink/certificates
+mutt/mutt.symlink/muttrc.local
