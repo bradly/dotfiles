@@ -25,4 +25,30 @@ hdr_order       From: To: Cc: Bcc: Date: Subject:
 
 macro index,pager D "<save-message>=Archive<enter>" "Archive message"
 
+auto_view text/html image/jpeg image/pjpeg image/png image/gif application/pdf
+
+color indicator black cyan
+color status	black white
+color body	red white [\-\.+_a-zA-Z0-9]+@[\-\.a-zA-Z0-9]+
+color normal black white
+color attachment brightyellow white
+color hdrdefault blue white
+color markers brightred white
+color quoted green white
+color signature cyan white
+color tilde blue white
+color tree red white
+color index red white "~F"
+color body brightblue white (https?|ftp)://[\-\.,/%~_:?&=\#a-zA-Z0-9]+
+color index brightyellow white "~N"
+color quoted1   brightblue            white
+color quoted2   red             white
+color quoted3   yellow          white
+color quoted4   cyan            white
+color quoted5   blue           	white
+color quoted6   magenta         black
+color quoted7   red             black
+color quoted8   yellow          black
+color quoted9   cyan            black
+
 source ~/.mutt/muttrc.local

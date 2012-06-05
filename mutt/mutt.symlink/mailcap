@@ -8,10 +8,5 @@ image/gif; ~/.mutt/view_attachment.sh %s
 application/pdf; ~/.mutt/view_attachment.sh %s pdf
 
 # HTML
-# text/html; lynx -stdin; description=HTML Text; nametemplate=%s.html
-# text/html; lynx %s; nametemplate=%s.html
-# text/html; lynx -dump %s; nametemplate=%s.html; copiousoutput
-#text/html; lynx -force-html %s
-text/html; lynx %s
-
-# text/html; lynx -stdin -dump -force_html -width 70; copiousoutput; description=HTML Text; test=type lynx >/dev/null
+text/html;                      lynx %s; nametemplate=%s.html
+text/html;                      lynx -dump %s; nametemplate=%s.html; copiousoutput
