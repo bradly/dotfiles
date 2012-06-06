@@ -24,3 +24,5 @@ for config_file ($ZSH/**/completion.sh) source $config_file
 # add rvm to path
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 if [[ -s /Users/bfeeley/.rvm/scripts/rvm ]] ; then source /Users/bfeeley/.rvm/scripts/rvm ; fi
+
+bindkey '^R' history-incremental-search-backward
