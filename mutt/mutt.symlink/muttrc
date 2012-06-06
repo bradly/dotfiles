@@ -16,6 +16,8 @@ set sort_aux       = "last-date-received"
 set strict_threads = yes
 set config_charset = utf-8
 set mail_check     = 60
+set imap_keepalive = 60
+set copy           = yes
 set noconfirmappend
 
 ignore          *
