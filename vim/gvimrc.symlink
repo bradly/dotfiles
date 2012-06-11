@@ -1,8 +1,6 @@
-colorscheme desert
 set anti
 set lines=9999 columns=9999
 set guioptions=egmrt
-set gfn=Menlo\ Regular:h22
 
 " CtrlP ignores
 let g:ctrlp_map = ''
