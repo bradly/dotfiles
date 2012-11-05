@@ -26,3 +26,5 @@ PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 if [[ -s /Users/bfeeley/.rvm/scripts/rvm ]] ; then source /Users/bfeeley/.rvm/scripts/rvm ; fi
 
 bindkey '^R' history-incremental-search-backward
+
+unsetopt correct_all
