@@ -32,9 +32,13 @@ class Object
 end
 
 def me
-  User.find_by_login('holman')
+  User.find_by_login('bradly')
 end
 
 def r
   reload!
+end
+
+def cc
+  ApplicationController.current_community = Community.first
 end
