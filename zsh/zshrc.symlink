@@ -75,7 +75,10 @@ done
 
 unset config_files
 
-
+# rbenv
+export RBENV_ROOT=/usr/local/var/rbenv
+export PATH="$HOME/.rbenv/bin:$PATH"
+if which rbenv > /dev/null; then eval "$(rbenv init - zsh)"; fi
 
 # Customize to your needs...
 setopt nocorrectall
