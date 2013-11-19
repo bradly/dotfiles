@@ -30,3 +30,4 @@ alias s='git status'
 alias status='git status'
 alias tag='git tag'
 alias gs='git status -sb' # upgrade your git if -sb breaks for you. it's fun.
+alias sha_copy="git show | head -n 1 | cut -d ' ' -f 2 | pbcopy"
