@@ -6,3 +6,4 @@
 *.rbc
 .powenv
 autotest
+.vagrant

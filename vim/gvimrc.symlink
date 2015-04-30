@@ -44,3 +44,7 @@ nmap <d-6> 6gt
 nmap <d-7> 7gt
 nmap <d-8> 8gt
 nmap <d-9> 9gt
+
+" Default to fullscreen
+set fuopt+=maxhorz                      
+set fu

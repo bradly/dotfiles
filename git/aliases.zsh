@@ -7,14 +7,16 @@ then
 fi
 
 alias add='git add'
+alias amend='git commit --amend'
 alias bisect='git bisect'
 alias branch='git branch'
 alias checkout='git checkout'
+alias co='git checkout'
 alias cherry-pick='git cherry-pick'
 alias clone='git clone'
 alias commit='git commit'
 alias d='git diff'
-alias diff='git diff'
+#alias diff='git diff'
 alias fetch='git fetch'
 alias log="git log --graph --pretty=format:'%Cred%h%Creset %an: %s - %Creset %C(yellow)%d%Creset %Cgreen(%cr)%Creset' --abbrev-commit --date=relative"
 alias merge='git merge'

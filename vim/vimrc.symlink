@@ -23,6 +23,7 @@ set nosmarttab             " fuck tabs
 set formatoptions+=n       " support for numbered/bullet lists
 set virtualedit=block      " allow virtual edit in visual block ..
 set gfn=Menlo\ Regular:h22
+set relativenumber
 
 " ----------------------------------------------------------------------------
 "  Remapping
@@ -68,7 +69,7 @@ set shortmess=filtIoOA     " shorten messages
 set report=0               " tell us about changes
 set nostartofline          " don't jump to the start of line when scrolling
 set guioptions-=T
-set scrolloff=999
+set scrolloff=10
 
 
 " ----------------------------------------------------------------------------
@@ -101,3 +102,4 @@ map ,s :call StripWhitespace ()<CR>
 map <Leader>e :e <C-r>=expand("%:p:h") . "/" <CR>
 map <Leader>te :tabe <C-r>=expand("%:p:h") . "/" <CR>
 
+autocmd BufNewFile,BufReadPost *.md set filetype=markdown
