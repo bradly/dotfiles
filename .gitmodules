@@ -1,3 +1,0 @@
-[submodule "vim/vim.symlink/bundle/handlebars"]
-	path = vim/vim.symlink/bundle/handlebars
-	url = git://github.com/nono/vim-handlebars.git

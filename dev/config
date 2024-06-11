@@ -1,0 +1,9 @@
+[user]
+shopify_email = brad.feeley@shopify.com
+
+[features]
+notifications = true
+notifications.up = true
+
+[gcloud]
+version = 477.0.0

@@ -1,0 +1,22 @@
+[include]
+	path = /Users/bradfeeley/.config/dev/gitconfig
+[user]
+	name = Brad Feeley
+	email = brad.feeley@shopify.com
+[core]
+	editor = nvim
+	pager = less -FRX
+[alias]
+	sw = switch
+	ds = diff --staged
+	s = status
+	ap = add -p
+	d = diff
+	pushu = push --set-upstream origin
+[push]
+	autoSetupRemote = true
+	default = simple
+[init]
+	defaultBranch = main
+[branch]
+	autoSetupMerge = simple

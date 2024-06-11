@@ -1,9 +1,0 @@
-.DS_Store
-.svn
-.tissues
-*~
-*.swp
-*.rbc
-.powenv
-autotest
-.vagrant
