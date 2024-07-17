@@ -56,6 +56,12 @@ lvim.plugins = {
     "mrjones2014/nvim-ts-rainbow",
   },
   {
+    "folke/tokyonight.nvim",
+    lazy = false,
+    priority = 1000,
+    opts = {},
+  },
+  {
     "nvim-telescope/telescope-fzy-native.nvim",
     build = "make",
     event = "BufRead",
@@ -100,5 +106,12 @@ lvim.plugins = {
     end
   },
   { "tpope/vim-repeat" },
-  { "tpope/vim-rails" }
+  {
+    "williamboman/mason.nvim",
+    "williamboman/mason-lspconfig.nvim",
+    "neovim/nvim-lspconfig",
+},
+  { "tpope/vim-rails" },
+  { "lukas-reineke/indent-blankline.nvim", main = "ibl", opts = {} },
+  { "rafamadriz/friendly-snippets" }
 }
