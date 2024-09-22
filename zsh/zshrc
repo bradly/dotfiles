@@ -1,15 +1,32 @@
 export EDITOR=lvim
 export ZSH="$HOME/.oh-my-zsh"
-export PATH=/Users/bradfeeley/.local/bin:$PATH
+export PATH="$HOME/.local/bin:$PATH"
+export XDG_CONFIG_HOME="$HOME/.config"
 
-ZSH_THEME="robbyrussell"
+ZSH_THEME="random"
 zstyle ':omz:update' mode disabled
 DISABLE_UNTRACKED_FILES_DIRTY="true"
 HIST_STAMPS="yyyy-mm-dd"
 plugins=()
 source $ZSH/oh-my-zsh.sh
-source $ZSH/aliases.sh
 
 [ -f /opt/dev/dev.sh ] && source /opt/dev/dev.sh
 [[ -f /opt/dev/sh/chruby/chruby.sh ]] && { type chruby >/dev/null 2>&1 || chruby () { source /opt/dev/sh/chruby/chruby.sh; chruby "$@"; } }
 [[ -x /opt/homebrew/bin/brew ]] && eval $(/opt/homebrew/bin/brew shellenv)
+
+ALIASES_FILE="$HOME/.config/zsh/aliases"
+touch $ALIASES_FILE
+source $ALIASES_FILE
+
+add_alias() {
+  if [ "$#" -ne 2 ]; then
+    echo "Usage: add_alias alias_name command"
+    return 1
+  fi
+
+  ALIAS_NAME="$1"
+  COMMAND="$2"
+
+  touch "$ALIASES_FILE"
+  echo "alias $ALIAS_NAME='$COMMAND'" >> "$ALIASES_FILE"
+}

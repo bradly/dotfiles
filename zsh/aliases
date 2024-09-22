@@ -1,0 +1,9 @@
+function create_git_aliases() {
+  local aliases=("$@")
+  for alias in "${aliases[@]}"; do
+    alias $alias="git $alias"
+  done
+}
+
+create_git_aliases d s ap add bisect branch checkout cherry-pick clone commit diff fetch log merge pull push rebase reset revert show stash status switch
+alias z='vi ~/.zshrc'
